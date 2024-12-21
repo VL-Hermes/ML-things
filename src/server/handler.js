@@ -12,9 +12,10 @@ async function postPredictHandler ( request, h ) {
   const id = crypto.randomUUID();  
   const createdAt = new Date().toISOString();
 
+  const result = lable;
   const data = {
     "id": id,
-    "result": lable,
+    "result": result,
     "suggestion": suggestion,
     "createdAt": createdAt
   } 
