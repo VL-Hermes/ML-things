@@ -16,7 +16,12 @@ async function postPredictHandler ( request, h ) {
     "result": lable,
     "suggestion": suggestion,
     "createdAt": createdAt
-  }
+  } 
+  await storeData(id, data);
+   
+    
+  
+/*Kode disembunyikan*/
   // console.log(data);
 
 
